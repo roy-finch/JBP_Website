@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(175, 175, 175);
+    top: 0px;
+    left: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.skel {
+    border: 1px solid black;
+}
+.logo {
+    font-family: HandelGotDLig;
+}
+.h-100vh {
+    height: 100vh;
+}
+.h-80vh {
+    height: 80vh;
+}
+.h-75vh {
+    height: 75vh;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&B Pallets | Home Page</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom.css') }}">
+    <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+</head>
+<body>
+    <div class="w-100per position-fixed topN-1px leftN-1px t-indent-20px bg-color-white">
+        <div>
+            <a href=""><h1 class="logo display-inline-flex w-88per"><span class="letter-spacing-3px color-green">J&B</span><span> Pallets</span></h1></a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </div>
+    
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
