@@ -1,26 +1,60 @@
 {% extends "base.html" %}
 {% block content %}
-
-<div class="m-top-120px h-60vh m-left-30px m-right-30px bg-color-white p-40px">
-    <h2 class="t-align-center">Info</h2>
-    <hr>
-    <div class="display-inline-flex w-50per">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat.</p>
-    </div>
-    <div class="display-inline-flex w-49per">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat.</p>
+<div class="w-100per z-index-2 h-100vh bg-color-white">
+    <img class="h-100per w-100per" src="{{ url_for('static', filename='img/temp.jpg') }}">
+</div>
+<div class="h-100vh w-100per bg-color-white">
+    <div class="p-80px">
+        <h2 class="t-align-center">Info</h2>
+        <hr>
+        <div class="display-inline-flex w-49per p-10px">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eveniet? Necessitatibus, voluptatum quaerat soluta modi, ex harum quidem quo voluptates beatae sed nobis at, expedita voluptas quia non illo voluptatibus.</p>
+        </div>
+        <div class="display-inline-flex w-40per">
+            <div class="p-20px">
+                <img class="h-100per w-100per b-r-25px" src="{{ url_for('static', filename='img/temp.jpg') }}">
+            </div>
+        </div>
     </div>
 </div>
-<br>
-<div id="contact" class="h-60vh m-20px m-left-30px m-right-30px bg-color-white p-40px">
-    <h2 class="t-align-center">Contact Us</h2>
-    <hr>
-    <div class="display-inline-flex w-50per">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat.</p>
-    </div>
-    <div class="display-inline-flex w-49per">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat.</p>
+<div class="h-100vh w-100per leftN-1px bg-color-white">
+    <div class="p-80px">
+        <h2 class="t-align-center">Estimation</h2>
+        <hr>
+        <div class="t-align-center">
+            <p>If you feel as though you would like the check for an estimated price before you contact us, use the following form to find out the information you would like.</p>
+        </div>
+        <form class="t-align-center p-80px">
+            <label for="type">Type:</label><output id="t">Type 1</output>
+            <br>
+            <select class="w-80per p-10px b-r-15px t-align-center" id="type" oninput="qUpdate()">
+                <option value="Type 1">Type 1</option>
+                <option value="Type 2">Type 2</option>
+                <option value="Type 3">Type 3</option>
+            </select>
+            <br>
+            <label for="quantity">Quantity: </label><output id="q">0</output>
+            <br>
+            <input id="quantity" type="range" class="w-80per" value="0" oninput="qUpdate()">
+            <br>
+            <div class="p-10px m-top-50px f-size-20px b-r-15px">
+                <label for="price">Price: £</label><output type="" id="price">0</output>
+            </div>
+        </form>
     </div>
 </div>
-
+<div class="h-100vh w-100per leftN-1px bg-color-white">
+    <div class="p-80px">
+        <h2 class="t-align-center">Contact Us</h2>
+        <hr>
+        <div class="display-inline-flex w-40per">
+            <div class="p-20px">
+                <img class="h-100per w-100per b-r-25px" src="{{ url_for('static', filename='img/temp.jpg') }}">
+            </div>
+        </div>
+        <div class="w-49per">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat.</p>
+        </div>
+    </div>
+</div>
 {% endblock %}

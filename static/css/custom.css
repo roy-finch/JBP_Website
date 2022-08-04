@@ -1,8 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(175, 175, 175);
-    top: 0px;
-    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    user-select: none;
 }
 a {
     text-decoration: none;
@@ -22,4 +24,22 @@ a {
 }
 .h-75vh {
     height: 75vh;
+}
+.h-95vh {
+    height: 95vh;
+}
+.w-100vw {
+    width: 100vw;
+}
+.z-index-2 {
+    z-index: -2;
+}
+.h-40vh {
+    height: 40vh;
+}
+.m-top-100vh {
+    margin-top: 100vh;
+}
+.w-88vw {
+    width: 88vw;
 }
