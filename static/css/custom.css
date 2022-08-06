@@ -14,11 +14,20 @@ a:hover {
     background-color: white;
     color: black;
 }
-p, span, a {
+p, span, a, select, input[type="range"], output, label {
     text-align: center;
     margin: auto;
     width: 90%;
     font-size: 24px;
+}
+li, ul {
+    font-size: 24px;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size:28px
 }
 div {
     margin: auto;
