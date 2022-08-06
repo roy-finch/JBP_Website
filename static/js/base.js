@@ -18,8 +18,11 @@ function qUpdate() {
 
 function scrollUpdate(e) {
     var scroll = this.oldScroll > this.scrollY
+
     if (this.oldScroll > this.scrollY) {
+        document.getElementById("footer").style.visibility = "visible";
     } else if (this.oldScroll < this.scrollY) {
+        document.getElementById("footer").style.visibility = "hidden";
     }
 
     if (this.scrollY >= 0 && this.scrollY < 600) {
@@ -31,5 +34,6 @@ function scrollUpdate(e) {
     }  else if (this.scrollY >= 1800) {
         document.title = "J&B Pallets | Contact Us"
     }
+
     this.oldScroll = this.scrollY;
 }

@@ -11,19 +11,27 @@
     <script src="{{ url_for('static', filename='js/base.js') }}"></script>
 </head>
 <body onscroll="scrollUpdate()">
-    <div class="w-100vw position-fixed topN-1px leftN-1px t-indent-20px bg-color-black t-align-center">
+    <div id="header" class="w-100vw position-fixed topN-1px leftN-1px t-indent-20px bg-color-black t-align-center">
         <div class="p-5px">
-            <a href=""><img class="w-22per h-40px" src="{{ url_for('static', filename='img/logo2.PNG') }}"></a>
+            <img class="w-22per h-40px" src="{{ url_for('static', filename='img/logo2.PNG') }}">
             <!-- <output id="s" class="color-white"></output> -->
         </div>
     </div>
+    <div id="header" class="w-100vw position-fixed top-50px leftN-1px t-indent-20px bg-color-green t-align-center">
+        <div class="p-5px">
+            <a class="p-5px f-size-20px" href="#home">Home</a>
+            <a class="p-5px f-size-20px" href="#info">Info</a>
+            <a class="p-5px f-size-20px" href="#estimate">Estimate</a>
+            <a class="p-5px f-size-20px" href="#contact">Contact</a>
+        </div>
+    </div>
     
-    <div class="position-absolute z-index-2 leftN-1px">
+    <div class="position-absolute w-100vw z-index-2 leftN-1px">
         {% block content %}
         {% endblock %}
     </div>
 
-    <div class="w-100vw position-fixed bottomN-1px leftN-1px t-indent-20px bg-color-black t-align-center">
+    <div id="footer" class="w-100vw position-fixed bottomN-1px leftN-1px t-indent-20px bg-color-black t-align-center">
         <div class="p-10px">
             <!-- <a class="color-white" href="#contact">Contact Us</a> -->
             <!-- <span class="color-white p-10px">Phone Number: 124135082357014790</span> -->

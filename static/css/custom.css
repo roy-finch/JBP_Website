@@ -10,6 +10,10 @@ a {
     text-decoration: none;
     color: black;
 }
+a:hover {
+    background-color: white;
+    color: black;
+}
 .skel {
     border: 1px solid black;
 }
