@@ -18,6 +18,7 @@ p, span, a {
     text-align: center;
     margin: auto;
     width: 90%;
+    font-size: 24px;
 }
 div {
     margin: auto;
