@@ -14,6 +14,27 @@ a:hover {
     background-color: white;
     color: black;
 }
+p, span, a {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+div {
+    margin: auto;
+}
+img {
+    margin: auto;
+    width: 50%;
+}
+hr {
+    width: 80%;
+}
+.max-w-900px-visib {
+    display: block;
+}
+.min-w-900px-visib {
+    display: none;
+}
 .skel {
     border: 1px solid black;
 }
@@ -23,27 +44,43 @@ a:hover {
 .h-100vh {
     height: 100vh;
 }
-.h-80vh {
-    height: 80vh;
-}
-.h-75vh {
-    height: 75vh;
-}
-.h-95vh {
-    height: 95vh;
-}
-.w-100vw {
-    width: 100vw;
-}
 .z-index-2 {
     z-index: -2;
-}
-.h-40vh {
-    height: 40vh;
 }
 .m-top-100vh {
     margin-top: 100vh;
 }
-.w-88vw {
-    width: 88vw;
+
+@media screen and (min-width: 900px) {
+    .w-100vw {
+        width: 100vw;
+    }
+    .w-40vw {
+        width: 40vw;
+    }
+    .w-50vw {
+        width: 50vw;
+    }
+    .min-w-900px-visib {
+        display: inline-block;
+    }
+    .max-w-900px-visib {
+        display: none;
+    }
+}
+
+.w-100vw {
+    width: 100vw;
+}
+.w-40vw {
+    width: 60vw;
+}
+.w-50vw {
+    width: 60vw;
+}
+.locked-p-5px {
+    padding: 5px;
+}
+.locked-p-10px {
+    padding: 10px;
 }

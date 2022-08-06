@@ -3,22 +3,31 @@
 <div id="home" class="w-100per z-index-2 h-100vh bg-color-white">
     <img class="h-100per w-100per" src="{{ url_for('static', filename='img/temp_pallet_yard.jpg') }}">
 </div>
-<div id="info" class="h-auto w-100per bg-color-white">
+<div id="info" class="h-auto p-bottom-60px w-100per bg-color-white">
     <div class="p-80px">
         <h2 class="t-align-center">Info</h2>
         <hr>
-        <div class="display-inline-block w-50per vertical-align-top">
+        <div class="display-inline-block t-align-center max-w-900px-visib w-100per">
+            <div class="locked-p-10px">
+                <img class="w-80per b-r-25px b-style-solid b-w-thin h-40px" src="{{ url_for('static', filename='img/logo2.PNG') }}">
+            </div>
+        </div>
+        <div class="display-inline-block w-50per vertical-align-top max-w-900px-visib">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eveniet? Necessitatibus, voluptatum quaerat soluta modi, ex harum quidem quo voluptates beatae sed nobis at, expedita voluptas quia non illo voluptatibus.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis, facilis, magnam sint eius nemo veniam saepe adipisci atque ratione illum veritatis explicabo nobis aliquam! Neque dicta quisquam ullam repellat?</p>
         </div>
-        <div class="display-inline-block w-40per">
+        <div class="display-inline-block w-50per vertical-align-top min-w-900px-visib">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eveniet? Necessitatibus, voluptatum quaerat soluta modi, ex harum quidem quo voluptates beatae sed nobis at, expedita voluptas quia non illo voluptatibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis, facilis, magnam sint eius nemo veniam saepe adipisci atque ratione illum veritatis explicabo nobis aliquam! Neque dicta quisquam ullam repellat?</p>
+        </div>
+        <div class="display-inline-block min-w-900px-visib w-40per">
             <div class="p-20px">
                 <img class="h-100per w-100per b-r-25px b-style-solid b-w-thin" src="{{ url_for('static', filename='img/logo2.PNG') }}">
             </div>
         </div>
     </div>
 </div>
-<div id="estimate" class="h-auto w-100per leftN-1px bg-color-white">
+<div id="estimate" class="h-auto p-bottom-60px w-100per leftN-1px bg-color-white">
     <div class="p-80px">
         <h2 class="t-align-center">Estimation</h2>
         <hr>
@@ -45,12 +54,17 @@
         <p class="t-align-center">Once you have recieved an estimation you can use the number within the contacts below to be able to call and book in your order.</p>
     </div>
 </div>
-<div id="contact" class="h-auto w-100per leftN-1px bg-color-white">
+<div id="contact" class="h-auto p-bottom-60px w-100per leftN-1px bg-color-white">
     <div class="p-80px">
         <h2 class="t-align-center">Contact Us</h2>
         <hr>
-        <div class="display-inline-block w-40per">
-            <div class="p-20px">
+        <div class="display-inline-block min-w-900px-visib w-40per">
+            <div class="locked-p-10px">
+                <img class="h-100per w-100per b-r-25px b-style-solid b-w-thin" src="{{ url_for('static', filename='img/temp_map.png') }}">
+            </div>
+        </div>
+        <div class="display-inline-block max-w-900px-visib w-80per">
+            <div class="locked-p-10px">
                 <img class="h-100per w-100per b-r-25px b-style-solid b-w-thin" src="{{ url_for('static', filename='img/temp_map.png') }}">
             </div>
         </div>
@@ -58,14 +72,29 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur provident doloribus neque vitae earum distinctio voluptas, nemo, accusantium eum reiciendis sint, eos accusamus impedit quaerat placeat harum laborum eaque fugiat.</p>
         </div>
-        <div class="display-inline-block w-45per p-left-50px">
+        <div class="display-inline-block w-40per min-w-900px-visib p-left-50px">
             <p>Below is the different ways you can contact us.</p>
             <ul class="list-style-type-square  t-indent-10px">
                 <li>With a phone call, call 23923 48948</li>
                 <li>With a quick email - fjdso@.com</li>
             </ul>
         </div>
-        <div class="display-inline-block w-45per p-right-50px">
+        <div class="display-inline-block w-45per max-w-900px-visib">
+            <br>
+            <p>Below is the different ways you can contact us.</p>
+            <p>With a phone call, call 23923 48948</p>
+            <p>With a quick email - fjdso@.com</p>
+        </div>
+        <div class="display-inline-block w-45per max-w-900px-visib">
+            <p>Alternatively take a look at our social media.</p>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <!-- <ul class="list-style-type-none  t-indent-10px">
+                <li>Facebook</li>
+                <li>Instagram</li>
+            </ul> -->
+        </div>
+        <div class="display-inline-block w-45per min-w-900px-visib p-right-50px">
             <p>Alternatively take a look at our social media.</p>
             <p>Facebook</p>
             <p>Instagram</p>
